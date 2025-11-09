@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "http://localhost:1111"
+base_url = "https//buyse.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -7,7 +7,7 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
-title = "Hi,"
+title = "Hi! buyse.dev"
 theme = "zola-hook"
 
 [markdown]
@@ -16,8 +16,10 @@ theme = "zola-hook"
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
+hi = "Hi!"
 links = [
-    { title = "mail", href = "buysedev@proton.me" },
+    { title = "about", href = "#" },
+    { title = "projects", href = "#" },
     { title = "github", href = "https://github.com/solargc" },
+    { title = "email", href = "mailto:buysedev@proton.me" },
 ]
