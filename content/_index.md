@@ -3,7 +3,7 @@
 
 I am Pascal Buyse, a developer in training based in Gent.  
 Learning C/C++ at 42 Belgium – it is wild.  
-Along the way, diving into tough-love Rust on my own.  
+Along the way, diving into Rust on my own.  
 
 *Currently looking for an entry-level position.*  
 

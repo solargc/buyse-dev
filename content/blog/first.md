@@ -1,4 +1,0 @@
-+++
-+++
-
-Ceci est une pomme.
