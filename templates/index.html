@@ -6,10 +6,11 @@
     <meta property="og:title" content="buyse.dev">
     <meta property="og:description" content="A small portfolio website.">
     <meta property="og:url" content="https://buyse.dev">
-    <meta property="og:image" content="https://buyse.dev/images/pixel.jpg">
+    <meta property="og:image" content="https://buyse.dev/images/pixel.png">
     <meta name="description" content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}">
     <title>{% block title %}{{config.extra.hi}} ∷ {{config.title }}{% endblock title %}</title>
     {% block extra_head %}
+    <link rel="icon" type="image/png" href="/images/pixel.png">
     <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
     {% endblock extra_head %}
     {% block feed_link %}
