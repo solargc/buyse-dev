@@ -1,7 +1,7 @@
 +++
 title = "Tools"
-
-extra.in_header = true
+[extra]
+extra.in_header = false
 +++
 
 I love foss. Here are some of the tools I use:

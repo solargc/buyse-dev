@@ -33,41 +33,33 @@
 </head>
 <body>
     {% block header %}
-    <header class="space">
-        <h1>{{ config.extra.hi }}</h1>
-        {% set linked_pages = section.pages | filter(attribute="extra.in_header") %}
-        {% if config.extra.links or linked_pages %}
-        <nav class="header-links">
-            {% for page in linked_pages %}
-            <a href="{{ page.permalink }}" style="text-transform: lowercase">{{ page.title }}</a>
-            {% endfor %}
-            {% for link in config.extra.links %}
-            <a href="{{ link.href }}">{{ link.title }}</a>
-            {% endfor %}
-        </nav>
-        {% endif %}
-    </header>
-    {% endblock header %}
-    {% block content %}
-    {% set blog = get_section(path="blog/_index.md") %}
-    {% if section.content or blog.pages %}
-    <main>
-        {% if section.content %}
-        <div {% if blog.pages %}class="space"{% endif %}>
-            {{ section.content | safe }}
-        </div>
-        {% endif %}
-        {% if blog.pages %}
-        <h2>Recent posts</h2>
-        <ul>
-            {% for post in blog.pages | slice(end=20) %}
-            <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-        <p><a href="{{ blog.permalink }}">Archive</a></p>
-        {% endif %}
-    </main>
+
+<header class="space">
+    {% if current_path == "/" %}
+    <h1>{{ config.extra.hi }}</h1>
+    {% else %}
+    <h1>{{ page.title | default(value=section.title) }}</h1>
     {% endif %}
-    {% endblock content %}
+    {% if config.extra.links %}
+    <nav class="header-links">
+        {% for link in config.extra.links %}
+        <a href="{{ link.href }}">{{ link.title }}</a>
+        {% endfor %}
+    </nav>
+    {% endif %}
+</header>
+{% endblock header %}
+{% block content %}
+{% set blog = get_section(path="projects/_index.md") %}
+{% if section.content or blog.pages %}
+<main>
+    {% if section.content %}
+    <div {% if blog.pages %}class="space"{% endif %}>
+        {{ section.content | safe }}
+    </div>
+    {% endif %}
+</main>
+{% endif %}
+{% endblock content %}
 </body>
 </html>

@@ -1,7 +1,5 @@
 +++
 title = "About"
-
-extra.in_header = true
 +++
 
 This site is built with [Zola](https://getzola.org/),
