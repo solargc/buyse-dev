@@ -3,9 +3,9 @@ title = "Projects"
 template = "projects.html"
 +++
 
-At 42, I am currently busy with the C++ modules and Webserv.
+I set up this website (see [about](/about)) to sharpen my web skills and gradually build a portfolio. Recently, I started to learn typescript/react with [this cute retro bingo](/projects/retrobingo).
 
-Recently I set up this website (see [about](/about)) to hone my web skills and gradually build a portfolio. I am currently learning typescript/react, I just build [this](/projects/retrobingo).
+At 42, I am currently working on Webserv: building a HTTP server from scratch in C++. We’ve already built [other fun stuff too](/projects/cub3d).
 
-After hours I am working on a [crossword-style board game](https://github.com/solargc/krabbels).  
-More on this soon.
+
+After hours I am working on a [crossword-style board game](https://github.com/solargc/krabbels). More on that soon.

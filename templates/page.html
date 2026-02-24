@@ -4,8 +4,9 @@
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
 {% block header %}
-<header class="space">
+<header class="space spacejam" >
     <a href="{{ config.base_url }}">&LeftArrow; home</a>
+    <a href="/projects">projects &RightArrow;</a>
 </header>
 {% endblock header %}
 
