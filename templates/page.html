@@ -4,7 +4,7 @@
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
 {% block header %}
-<header class="space spacejam" >
+<header class="space space-jam" >
     <a href="{{ config.base_url }}">&LeftArrow; home</a>
     <a href="/projects">projects &RightArrow;</a>
 </header>
@@ -36,5 +36,25 @@
     {% endif %}
     <div class="space"></div>
     {{ page.content | safe }}
+
+    {% set proj_section = get_section(path="projects/_index.md") %}
+    {% set pages = proj_section.pages %}
+    {% set last = pages | last %}
+    {% set first = pages | first %}
+
+    <nav class="space-up space-jam">
+        {% if page.lower %}
+        <a href="{{ page.lower.permalink }}">&LeftArrow; {{ page.lower.title }}</a>
+        {% else %}
+        <a href="{{ last.permalink }}">&LeftArrow; {{ last.title }}</a>
+        {% endif %}
+
+        {% if page.higher %}
+        <a href="{{ page.higher.permalink }}">{{ page.higher.title }} &RightArrow;</a>
+        {% else %}
+        <a href="{{ first.permalink }}">{{ first.title }} &RightArrow;</a>
+        {% endif %}
+    </nav>
 </main>
 {% endblock content %}
+

@@ -12,5 +12,12 @@
 <main>
     <h1>{{ section.title }}</h1>
     {{ section.content | safe }}
+
+    <nav class="header-links">
+    {% for project in section.pages %}
+    <a href="{{ project.permalink }}">{{ project.title }}</a>
+    {% endfor %}    
+    </nav>
+
 </main>
 {% endblock content %}
