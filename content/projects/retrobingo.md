@@ -20,7 +20,7 @@ What I learned:
 - Modern css, dark themed, responsive layout
 - From scratch to deployment as a static website
 
-Images are llm-generated, with nostalgic Caribbean a&nbsp;e&nbsp;s&nbsp;t&nbsp;h&nbsp;e&nbsp;t&nbsp;i&nbsp;c&nbsp;s.   
+Images are llm-generated, with a nostalgic Caribbean aesthetic.   
 Claude Code for boilerplate, CSS tinkering, syntax learning.
 
 The code is [here](https://github.com/solargc/retrobingo).  
