@@ -9,7 +9,8 @@ A first-person maze inspired by Wolfenstein 3D. The goal of this 42 project was 
   src="https://solargc.github.io/cub3d-wasm/"
   class="embed-frame"
   style="width: 100%; aspect-ratio:16/9"
-  loading="lazy">
+  loading="lazy"
+  allow="fullscreen" allowfullscreen>
 </iframe>
 
 <div class="controls">
@@ -31,7 +32,7 @@ A first-person maze inspired by Wolfenstein 3D. The goal of this 42 project was 
     </div>
 </div>
 
-With this graphics project, we learned a lot:
+I learned about:
 
 - File parsing and error handling
 - Event loop and graphics library usage
