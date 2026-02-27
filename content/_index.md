@@ -4,7 +4,7 @@ title = "Hi!"
 
 I am Pascal Buyse, a developer in training based in Ghent.
 
-Studying C/Cj+ at 42 Belgium, diving into Rust after hours, and building [projects](/projects) with TypeScript and React.
+Studying C/C++ at 42 Belgium, diving into Rust after hours, and building [projects](/projects) with TypeScript and React.
 
 *Open to entry-level positions.*
 
