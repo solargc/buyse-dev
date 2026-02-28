@@ -37,7 +37,8 @@ I learned about:
 - File parsing and error handling
 - Event loop and graphics library usage
 - DDA algorithm for raycasting
-- Frame rendering, movement and keybindings
+- Frame rendering and textures
+- Movement and keybindings
 
 Textures were hand-crafted by Jacobus.   
 The original C project is [here](https://github.com/solargc/cub3d).  
