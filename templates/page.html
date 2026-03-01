@@ -43,16 +43,15 @@
     {% set first = pages | first %}
 
     <nav class="space-up space-jam">
-        {% if page.lower %}
-        <a href="{{ page.lower.permalink }}">&LeftArrow; {{ page.lower.title }}</a>
-        {% else %}
-        <a href="{{ last.permalink }}">&LeftArrow; {{ last.title }}</a>
-        {% endif %}
-
         {% if page.higher %}
-        <a href="{{ page.higher.permalink }}">{{ page.higher.title }} &RightArrow;</a>
+        <a href="{{ page.higher.permalink }}">&LeftArrow; {{ page.higher.title }}</a>
         {% else %}
-        <a href="{{ first.permalink }}">{{ first.title }} &RightArrow;</a>
+        <a href="{{ first.permalink }}">&LeftArrow; {{ first.title }}</a>
+        {% endif %}
+        {% if page.lower %}
+        <a href="{{ page.lower.permalink }}">{{ page.lower.title }} &RightArrow;</a>
+        {% else %}
+        <a href="{{ last.permalink }}">{{ last.title }} &RightArrow;</a>
         {% endif %}
     </nav>
 </main>

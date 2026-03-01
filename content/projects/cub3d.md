@@ -13,7 +13,15 @@ A first-person maze inspired by Wolfenstein 3D. The goal of this 42 project was 
   allow="fullscreen" allowfullscreen>
 </iframe>
 
-<div class="controls">
+This WASM demo is interactive on both desktop and mobile and supports fullscreen mode.
+<div class="desktop-only">
+Use the keys shown below to move and look around.
+</div>
+<div class="mobile-only">
+Use two thumbs: left side to move, right side to look around.
+</div>
+
+<div class="controls" style="padding-top: 1em">
     <div class="keys">
         <div class="key-row">
             <kbd>W</kbd>
@@ -34,11 +42,12 @@ A first-person maze inspired by Wolfenstein 3D. The goal of this 42 project was 
 
 I learned about:
 
-- File parsing and error handling
-- Event loop and graphics library usage
-- DDA algorithm for raycasting
-- Frame rendering and textures
-- Movement and keybindings
+- Parsing and validating map files
+- Checking map integrity, error handling
+- Using a low-level graphics library and event loop
+- Implementing raycasting with the DDA algorithm
+- Frame rendering with textured walls
+- Movement, collision detection, keybindings
 
 Textures were hand-crafted by Jacobus.   
 The original C project is [here](https://github.com/solargc/cub3d).  

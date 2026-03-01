@@ -7,7 +7,7 @@ A minimal shell written in C.
 
 <img src="/projects/minishell.jpg" alt="minishell" class="show">
 
- We enjoyed learning about:
+ I learned about:
 - Lexer and parser implementation
 - Command execution in a Unix environment
 - Pipes and redirections
