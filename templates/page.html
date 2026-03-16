@@ -42,6 +42,8 @@
     {% set last = pages | last %}
     {% set first = pages | first %}
 
+    {% if not page.extra.about %}
+
     <nav class="space-up space-jam">
         {% if page.higher %}
         <a href="{{ page.higher.permalink }}">&LeftArrow; {{ page.higher.title }}</a>
@@ -54,6 +56,7 @@
         <a href="{{ last.permalink }}">{{ last.title }} &RightArrow;</a>
         {% endif %}
     </nav>
+    {% endif %}
 </main>
 {% endblock content %}
 

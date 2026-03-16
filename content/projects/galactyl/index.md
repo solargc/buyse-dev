@@ -6,8 +6,7 @@ date = 2026-03-11
 thumbnail = "thumbnail.jpg"
 +++
 
-A typing game where every keystroke propels you through a space.
-Type fast, watch planets fly by, and survive the countdown.
+A typing game where every keystroke propels you through a space.  
 It is written in Typescript/React/CSS.
 
 <iframe
@@ -18,14 +17,20 @@ It is written in Typescript/React/CSS.
   allow="fullscreen" allowfullscreen>
 </iframe>
 
+*Warning: this game contains flashing lights.*
+
+Start the game by typing but make sure the window is focused.  
+It is desktop only and supports fullscreen.
 
 What I learned:
 
-- Canvas-based animations: projecting 3D coordinates to 2D to create depth illusions
+- Projecting 3D coordinates to 2D to create depth and movement
 - CSS transformations: perspective(), rotateX(), scaleY()
-- Gameplay feel: tying visual feedback (speed, shake, color shifts) directly to player input
-- Progressive tension design: escalating effects as the timer runs out to create urgency
-- Responsive layout: media queries on both width and height, flex container sizing pitfalls
-- Deploying a Vite/React app to GitHub Pages with GitHub Actions
+- Creating a gameplay with speed, shake, color shifts tied to input
+- Escalating effects to create tension
+- Responsive layout, media queries on both width and height
+- Automating deployment of a Vite/React app with GitHub Actions
 
-This was done mostly with Claude.
+This was done mostly with Claude.  
+The goal was to play with modern CSS and automated workfklows.  
+Code is [here](https://github.com/solargc/galactyl-3000).  
