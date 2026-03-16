@@ -1,6 +1,9 @@
 +++
 title = "retrobingo"
 date = 2026-02-23
+
+[extra]
+thumbnail = "thumbnail.jpg"
 +++
 
 I built a small bingo game.

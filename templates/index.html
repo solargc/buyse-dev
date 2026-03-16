@@ -11,10 +11,7 @@
     <meta property="og:image" content="https://buyse.dev/images/pixel.png">
     <title>{% block title %}{{ config.extra.hi }}{% endblock title %}</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <style>
-        {% set css = load_data(path="style.css") %}
-        {{ css | safe }}
-    </style>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   

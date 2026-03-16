@@ -13,11 +13,22 @@
     <h1>{{ section.title }}</h1>
     {{ section.content | safe }}
 
-    <nav class="header-links">
-    {% for project in section.pages %}
-    <a href="{{ project.permalink }}">{{ project.title }}</a>
-    {% endfor %}    
-    </nav>
+    <div class="project-grid space">
+      {% for page in section.pages %}
+      <a class="project-card" href="{{ page.permalink }}">
+        {% if page.extra.thumbnail %}
+        <div class="project-thumb">
+        <img src="{{ page.permalink }}{{ page.extra.thumbnail }}" alt="{{ page.title }}">
+        </div>
+        {% endif %}
+        <span>{{ page.title }}</span>
+      </a>
+      {% endfor %}
+    </div>
 
-</main>
+    {% if section.extra.after_grid %}
+    <p>{{ section.extra.after_grid }}</p>
+    {% endif %}
+
+    </main>
 {% endblock content %}

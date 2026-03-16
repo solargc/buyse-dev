@@ -1,6 +1,9 @@
 +++
 title = "minishell"
 date = 2025-07-15
+
+[extra]
+thumbnail = "thumbnail.jpg"
 +++
 
 A minimal shell written in C.

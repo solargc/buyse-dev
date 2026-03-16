@@ -1,6 +1,9 @@
 +++
 title = "cub3d"
 date = 2025-09-01
+
+[extra]
+thumbnail = "thumbnail.jpg"
 +++
 
 A first-person maze inspired by Wolfenstein 3D. The goal of this 42 project was to build a simple raycasting engine. As a team, we implemented parsing,  movement, rotation and textures.

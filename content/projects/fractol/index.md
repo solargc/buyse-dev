@@ -1,6 +1,9 @@
 +++
 title = "fractol"
 date = 2025-01-08
+
+[extra]
+thumbnail = "thumbnail.jpg"
 +++
 
 A small graphics program in C that renders fractals like Mandelbrot and Julia sets.
