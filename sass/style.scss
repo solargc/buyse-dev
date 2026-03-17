@@ -278,17 +278,13 @@ table {
   text-align:center;
 }
 
-.project-thumb {
-  overflow: hidden;
-  border: 2px solid var(--foreground);
-  border-radius: 5px;
-}
-
 .project-card img {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   display: block;
+  border: 2px solid var(--foreground);
+  border-radius: 5px;
 }
 
 .project-card:hover img {

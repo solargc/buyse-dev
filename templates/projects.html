@@ -17,9 +17,7 @@
       {% for page in section.pages %}
       <a class="project-card" href="{{ page.permalink }}">
         {% if page.extra.thumbnail %}
-        <div class="project-thumb">
         <img src="{{ page.permalink }}{{ page.extra.thumbnail }}" alt="{{ page.title }}">
-        </div>
         {% endif %}
         <span>{{ page.title }}</span>
       </a>
