@@ -8,7 +8,7 @@ thumbnail = "thumbnail.jpg"
 
 I built a small bingo game.
 <iframe
-  src="https://retrobingo.buyse.dev/"
+  src="https://solargc.github.io/retrobingo/"
   class="embed-frame"
   style="width: clamp(300px, 70vh, 90%); aspect-ratio: 1/1; min-height: 650px"
   loading="lazy">
