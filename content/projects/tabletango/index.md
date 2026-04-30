@@ -6,9 +6,9 @@ date = 2026-04-20
 thumbnail = "fig_01.jpg"
 +++
 
-I built this project to push my understanding of full-stack development, from simple database queries to deployment pipelines. A lot is new territory: async Rust, reactive frontends, infrastructure-as-code. Running NixOS as daily driver helped a lot for declarative deployment.
+I built this project to explore further full stack development, from simple database queries to deployment pipelines. A lot is new territory: async Rust, reactive frontends, infrastructure-as-code. Running NixOS as daily driver helped a lot for declarative deployment.
 
-The project includes a live dashboard, customer booking pages, gift cards, device pairing via QR code. A great ride!
+This is a platform to help restaurants to manage reservations. The project includes a live dashboard with reservations, configurable customer booking pages, table and schedule management, gift cards, device pairing via QR code.
 
 <style>
 .sg-r { display: none; }
@@ -99,23 +99,27 @@ The project includes a live dashboard, customer booking pages, gift cards, devic
 </div>
 
 **Backend in Rust**
-- [Axum](https://github.com/tokio-rs/axum) for routing
+
+- [Axum](https://github.com/tokio-rs/axum) for routing, REST API with token-based auth
 - [SQLx](https://github.com/launchbadge/sqlx) with compile-time verified SQL queries against PostgreSQL
 - [Tokio](https://tokio.rs) broadcast channels for real-time dashboard events
 
 **Frontend with SvelteKit**
-- Svelte 5
+
+- Svelte 5 with Server-Sent Events
 - TypeScript
 - Tailwind CSS
 
 **Infrastructure**
+
 - PostgreSQL in Docker locally, NixOS service in production
 - Hetzner VPS reformatted to NixOS with [nixos-anywhere](https://github.com/nix-community/nixos-anywhere)
+- [Caddy](https://caddyserver.com) as reverse proxy with automatic HTTPS
 - Rust binary built reproducibly with [Crane](https://github.com/ipetkov/crane) + Nix flakes
-- Remote deployments with [deploy-rs](https://github.com/serokell/deploy-rs) — one command, auto-rollback on failure
+- Remote deployments with [deploy-rs](https://github.com/serokell/deploy-rs), over SSH
 
 **Llm collegue**
-- Claude used throughout development and NixOS config.
+- Claude used throughout development and NixOS config for deployment.
 
 **Todo:**
 - Secret management with [sops-nix](https://github.com/Mic92/sops-nix)
