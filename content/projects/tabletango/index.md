@@ -6,7 +6,7 @@ date = 2026-04-20
 thumbnail = "fig_01.jpg"
 +++
 
-I built this project to explore further full stack development, from simple database queries to deployment pipelines. A lot is new territory: async Rust, reactive frontends, infrastructure-as-code. Running NixOS as daily driver helped a lot for declarative deployment.
+I built this project to explore further full stack development. A lot is new territory: Axum for routing, async Rust, reactive frontends, SSR vs CSR, infrastructure-as-code. Running NixOS as daily driver helped greatly for declarative deployment.
 
 This is a platform to help restaurants to manage reservations. The project includes a live dashboard with reservations, configurable customer booking pages, table and schedule management, gift cards, device pairing via QR code.
 
@@ -106,7 +106,7 @@ This is a platform to help restaurants to manage reservations. The project inclu
 
 **Frontend with SvelteKit**
 
-- Svelte 5 with Server-Sent Events
+- Svelte 5 (Runes)
 - TypeScript
 - Tailwind CSS
 
@@ -116,10 +116,10 @@ This is a platform to help restaurants to manage reservations. The project inclu
 - Hetzner VPS reformatted to NixOS with [nixos-anywhere](https://github.com/nix-community/nixos-anywhere)
 - [Caddy](https://caddyserver.com) as reverse proxy with automatic HTTPS
 - Rust binary built reproducibly with [Crane](https://github.com/ipetkov/crane) + Nix flakes
-- Remote deployments with [deploy-rs](https://github.com/serokell/deploy-rs), over SSH
+- Remote deployments over ssh with [deploy-rs](https://github.com/serokell/deploy-rs)
 
 **Llm collegue**
 - Claude used throughout development and NixOS config for deployment.
 
-**Todo:**
+**Todo**
 - Secret management with [sops-nix](https://github.com/Mic92/sops-nix)
