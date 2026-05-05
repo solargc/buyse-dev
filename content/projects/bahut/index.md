@@ -6,9 +6,9 @@ date = 2026-05-05
 thumbnail = "fig_01.jpg"
 +++
 
-With the experience gained from tabletango, I kept the same core stack and built a book sharing app for a local book club. I wanted the onboarding to be as simple as possible with token-based authentification.
+With the experience gained from [tabletango](/projects/tabletango/), I kept the same core stack and built a book sharing app for a local book club. I wanted the onboarding to be as simple as possible with token-based authentification.
 
-The group shares a shelf (a library), you can add books and follow who reads which book. You can be part of multiple shelves and create new ones, with rate limiting to keep things stable. It is deployed and in early testing at the book club.
+The group shares a shelf (a library), you can add books scanning their ISBN code and follow who reads which book. You can be part of multiple shelves and create new ones, with rate limiting to keep things stable. It is deployed and in early testing at the book club.
 
 <style>
 .sg-r { display: none; }
